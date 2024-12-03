@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prodect Listing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Listings</h1>
+      <input type="text" id="search-bar" placeholder="Search products..." />
+      <select id="filter-category">
+        <option value="">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="jewelery">Jewelry</option>
+        <option value="men's clothing">Men's Clothing</option>
+        <option value="women's clothing">Women's Clothing</option>
+      </select>
+    </header>
+    <main>
+      <section id="product-list">
+        <!-- Products will be dynamically added here -->
+      </section>
+      <div id="pagination">
+        <button id="prev-page">Previous</button>
+        <span id="page-info"></span>
+        <button id="next-page">Next</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>&copy; 2024 Client's Store</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
